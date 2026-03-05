@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woods Plumbing Services Inc. — Trusted Local Plumbers</title>
+<meta name="description" content="Woods Plumbing Services Inc. provides reliable plumbing repair, installation, and emergency services. Licensed professionals serving your area. Call now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   CSS VARIABLES & RESET
+   ============================================ */
+:root {
+  --deep-navy: #0B3A5B;
+  --slate-blue: #2E5F8A;
+  --slate-blue-light: #3A7AB5;
+  --light-slate: #F4F7FA;
+  --warm-white: #FAFBFD;
+  --text-primary: #0B3A5B;
+  --text-secondary: #4A6A82;
+  --text-light: #7A95A8;
+  --accent-gold: #D48240;
+  --accent-gold-light: #F0A050;
+  --white: #FFFFFF;
+  --shadow-sm: 0 1px 3px rgba(11,58,91,0.06);
+  --shadow-md: 0 4px 16px rgba(11,58,91,0.08);
+  --shadow-lg: 0 8px 32px rgba(11,58,91,0.10);
+  --shadow-xl: 0 16px 48px rgba(11,58,91,0.12);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--white);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--slate-blue);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.15;
+  color: var(--deep-navy);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.section-subtext {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  min-height: 48px;
+  padding: 14px 32px;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--slate-blue);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(46,95,138,0.3);
+}
+.btn-primary:hover {
+  background: var(--deep-navy);
+  box-shadow: 0 4px 16px rgba(11,58,91,0.35);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.5);
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--white);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--slate-blue);
+  border: 2px solid var(--slate-blue);
+}
+.btn-ghost:hover {
+  background: var(--slate-blue);
+  color: var(--white);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid rgba(11,58,91,0.06);
+  transition: box-shadow 0.3s ease;
+}
+.site-header.scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  background: var(--deep-navy);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--deep-navy);
+  line-height: 1.1;
+}
+.logo-text small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.header-nav {
+  display: none;
+  gap: 32px;
+  align-items: center;
+}
+.header-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+.header-nav a:hover { color: var(--deep-navy); }
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--deep-navy);
+  letter-spacing: -0.02em;
+}
+.header-phone svg { flex-shrink: 0; }
+.header-phone > svg { display: none; }
+
+.header-phone-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--slate-blue);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .header-nav { display: flex; }
+  .header-phone-mobile { display: none; }
+  .header-phone > svg { display: block; }
+}
+@media (max-width: 767px) {
+  .header-phone span { display: none; }
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  position: relative;
+  padding: 100px 0 56px;
+  background: linear-gradient(165deg, var(--deep-navy) 0%, #0E4870 50%, var(--slate-blue) 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse 600px 400px at 80% 30%, rgba(212,130,64,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 400px 300px at 20% 70%, rgba(46,95,138,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Subtle pipe/wrench texture pattern */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.03;
+  background-image:
+    repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.5) 40px, rgba(255,255,255,0.5) 41px),
+    repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(255,255,255,0.5) 40px, rgba(255,255,255,0.5) 41px);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 100px;
+  padding: 6px 16px 6px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 24px;
+  backdrop-filter: blur(4px);
+}
+
+.hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #4ADE80;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 7vw, 60px);
+  font-weight: 400;
+  line-height: 1.08;
+  color: var(--white);
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--accent-gold-light);
+}
+
+.hero-sub {
+  font-size: clamp(16px, 2.5vw, 19px);
+  color: rgba(255,255,255,0.75);
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.hero-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.01em;
+}
+.hero-phone svg { opacity: 0.7; }
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
+
+.trust-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.trust-stars svg {
+  width: 16px;
+  height: 16px;
+  fill: #E0A030;
+}
+
+.hero-visual {
+  display: none;
+  position: relative;
+}
+
+.hero-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  backdrop-filter: blur(12px);
+}
+
+.hero-card-stat {
+  font-family: var(--font-display);
+  font-size: 56px;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero-card-label {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+}
+
+.hero-card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.hero-card-mini-stat {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.hero-card-mini-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+@media (min-width: 900px) {
+  .hero-grid { grid-template-columns: 1.1fr 0.9fr; }
+  .hero-visual { display: block; }
+  .hero-trust { display: none; }
+}
+
+/* ============================================
+   PROBLEM SECTION
+   ============================================ */
+.problem {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.problem-items {
+  display: grid;
+  gap: 20px;
+}
+
+.problem-item {
+  display: flex;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--light-slate);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--slate-blue);
+}
+
+.problem-item-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--slate-blue);
+  margin-top: 2px;
+}
+
+.problem-item p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.problem-item p strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .problem-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ============================================
+   SERVICES (SOLUTION) SECTION
+   ============================================ */
+.services {
+  padding: 80px 0;
+  background: var(--light-slate);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 36px 28px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(11,58,91,0.04);
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.service-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, var(--deep-navy), var(--slate-blue));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.service-icon svg { width: 26px; height: 26px; color: var(--white); }
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--deep-navy);
+}
+
+.service-card p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+@media (min-width: 640px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  .services-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* ============================================
+   PROOF / TESTIMONIALS
+   ============================================ */
+.proof {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.proof-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+  margin-bottom: 56px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 32px 16px;
+  background: var(--light-slate);
+  border-radius: var(--radius-md);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--deep-navy);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 640px) {
+  .proof-stats { grid-template-columns: repeat(4, 1fr); }
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: var(--light-slate);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  position: relative;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 16px;
+}
+.testimonial-stars svg { width: 18px; height: 18px; fill: #E0A030; }
+
+.testimonial-card blockquote {
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  background: var(--deep-navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+.testimonial-role {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* ============================================
+   PROCESS SECTION
+   ============================================ */
+.process {
+  padding: 80px 0;
+  background: var(--light-slate);
+}
+
+.process-header {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto 56px;
+}
+.process-header .section-subtext { margin: 0 auto; }
+
+.process-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  position: relative;
+}
+
+.process-step {
+  text-align: center;
+  position: relative;
+  padding: 36px 24px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--deep-navy), var(--slate-blue));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin: 0 auto 16px;
+}
+
+.process-step h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--deep-navy);
+  margin-bottom: 8px;
+}
+
+.process-step p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .process-steps { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+.about {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-visual {
+  background: linear-gradient(135deg, var(--deep-navy), var(--slate-blue));
+  border-radius: var(--radius-lg);
+  padding: 48px 36px;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.about-visual::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px;
+  height: 200px;
+  background: rgba(212,130,64,0.1);
+  border-radius: 50%;
+}
+
+.about-visual-stat {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.about-visual-label {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  position: relative;
+}
+
+.about-feat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.about-feat svg { width: 20px; height: 20px; flex-shrink: 0; opacity: 0.7; }
+
+.about-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5vw, 40px);
+  color: var(--deep-navy);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--light-slate);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.cert-badge svg { width: 16px; height: 16px; color: var(--slate-blue); }
+
+@media (min-width: 768px) {
+  .about-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ============================================
+   FINAL CTA SECTION
+   ============================================ */
+.final-cta {
+  padding: 80px 0;
+  background: linear-gradient(165deg, var(--deep-navy) 0%, #0E4870 50%, var(--slate-blue) 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse 500px 300px at 50% 50%, rgba(212,130,64,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.final-cta-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.final-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 6vw, 46px);
+  color: var(--white);
+  line-height: 1.12;
+  margin-bottom: 16px;
+}
+
+.final-cta p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.final-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.final-cta-phone {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  font-family: var(--font-display);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.01em;
+}
+
+.final-cta .or-divider {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+  background: #061E30;
+  color: rgba(255,255,255,0.6);
+  padding: 56px 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  padding-bottom: 40px;
+}
+
+.footer-brand .logo-text {
+  color: var(--white);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.footer-brand .logo-text small { color: rgba(255,255,255,0.4); }
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-heading {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 16px;
+}
+
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a {
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--white); }
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.footer-contact-item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  opacity: 0.5;
+}
+
+.footer-phone-link {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+
+@media (min-width: 640px) {
+  .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; }
+}
+
+/* ============================================
+   MOBILE STICKY CTA
+   ============================================ */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: var(--deep-navy);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 16px rgba(11,58,91,0.25);
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+}
+.sticky-cta.visible {
+  transform: translateY(0);
+}
+.sticky-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 700;
+}
+.sticky-cta svg { width: 22px; height: 22px; }
+
+@media (min-width: 768px) {
+  .sticky-cta { display: none; }
+}
+
+/* ============================================
+   SERVICE AREA BANNER
+   ============================================ */
+.service-area {
+  padding: 48px 0;
+  background: var(--white);
+  border-top: 1px solid rgba(11,58,91,0.06);
+}
+
+.service-area-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 32px;
+  text-align: center;
+}
+
+.service-area-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-light);
+  width: 100%;
+}
+
+.area-tag {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 6px 0;
+}
+
+.area-tag::after {
+  content: '·';
+  margin-left: 32px;
+  color: var(--text-light);
+  opacity: 0.4;
+}
+.area-tag:last-child::after { display: none; }
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.stagger > .fade-up:nth-child(1) { transition-delay: 0s; }
+.stagger > .fade-up:nth-child(2) { transition-delay: 0.1s; }
+.stagger > .fade-up:nth-child(3) { transition-delay: 0.2s; }
+.stagger > .fade-up:nth-child(4) { transition-delay: 0.3s; }
+.stagger > .fade-up:nth-child(5) { transition-delay: 0.4s; }
+.stagger > .fade-up:nth-child(6) { transition-delay: 0.5s; }
+
+/* Footer spacing for sticky CTA on mobile */
+@media (max-width: 767px) {
+  .site-footer { padding-bottom: 60px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ======================== HEADER ======================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#" class="logo">
+
+      <div class="logo-text">
+        Woods Plumbing
+        <small>Services Inc.</small>
+      </div>
+    </a>
+
+    <nav class="header-nav">
+      <a href="#services">Services</a>
+      <a href="#proof">Reviews</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a href="tel:+15043428000" class="header-phone" aria-label="Call Woods Plumbing">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>(504) 342-8000</span>
+      <div class="header-phone-mobile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+    </a>
+  </div>
+</header>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="hero">
+  <div class="container hero-content">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available 24/7 for Emergencies
+        </div>
+
+        <h1>Reliable Plumbing <em>Done Right</em> the First Time</h1>
+
+        <p class="hero-sub">Family-owned and operated since 1986. Licensed, insured professionals serving the Avondale and greater New Orleans area with honest pricing and guaranteed workmanship.</p>
+
+        <div class="hero-actions">
+          <a href="tel:+15043428000" class="btn btn-primary" style="background:var(--accent-gold); box-shadow: 0 2px 12px rgba(212,130,64,0.4);">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+
+        <a href="tel:+15043428000" class="hero-phone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (504) 342-8000
+        </a>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <div class="trust-stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            5.0 on Google (5 reviews)
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Family Owned &amp; Operated
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Licensed &amp; Insured
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            35+ Years Experience
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-stat">35+</div>
+          <div class="hero-card-label">Years Serving the Avondale Area</div>
+          <div class="hero-card-row">
+            <div>
+              <div class="hero-card-mini-stat">5.0★</div>
+              <div class="hero-card-mini-label">Google Rating</div>
+            </div>
+            <div>
+              <div class="hero-card-mini-stat">24/7</div>
+              <div class="hero-card-mini-label">Emergency Service</div>
+            </div>
+          </div>
+          <div class="hero-card-row">
+            <div>
+              <div class="hero-card-mini-stat">100%</div>
+              <div class="hero-card-mini-label">Satisfaction Guaranteed</div>
+            </div>
+            <div>
+              <div class="hero-card-mini-stat">Family</div>
+              <div class="hero-card-mini-label">Owned &amp; Operated</div>
+            </div>
+          </div>
+          <a href="tel:+15043428000" style="display:block; text-align:center; margin-top:24px; padding:14px; background:var(--accent-gold); color:white; border-radius:var(--radius-sm); font-weight:700; font-size:16px; transition: opacity 0.2s;">
+            Call (504) 342-8000
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROMISE ======================== -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div>
+        <span class="section-label">The Woods Plumbing Promise</span>
+        <h2 class="section-heading">What You Can Expect <br><em>Every Single Time</em></h2>
+        <p class="section-subtext">You deserve a plumber who respects your time, your home, and your budget. Here's what we guarantee on every job.</p>
+      </div>
+
+      <div class="problem-items stagger">
+        <div class="problem-item fade-up">
+          <svg class="problem-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <p><strong>We show up on time</strong> — and we answer the phone when you call, day or night, including weekends and holidays.</p>
+        </div>
+        <div class="problem-item fade-up">
+          <svg class="problem-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <p><strong>Upfront, honest pricing</strong> — you'll know the full cost before we start. No hidden fees, no surprise charges, ever.</p>
+        </div>
+        <div class="problem-item fade-up">
+          <svg class="problem-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <p><strong>Work done right the first time</strong> — our licensed technicians stand behind every repair with a written guarantee.</p>
+        </div>
+        <div class="problem-item fade-up">
+          <svg class="problem-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <p><strong>Clear communication throughout</strong> — we explain what's wrong, what we'll do, how long it takes, and what it costs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SERVICES ======================== -->
+<section class="services" id="services">
+  <div class="container">
+    <span class="section-label">Our Services</span>
+    <h2 class="section-heading">Full-Service Plumbing, <em>No Job Too Big or Small</em></h2>
+    <p class="section-subtext">From a dripping faucet to a complete repipe, our licensed technicians handle it all with the same level of care and precision.</p>
+
+    <div class="services-grid stagger">
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        </div>
+        <h3>Emergency Repairs</h3>
+        <p>Burst pipes, major leaks, and sewage backups handled fast — 24 hours a day, 7 days a week, including holidays.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h4a2 2 0 0 1 2 2v6"/><path d="M6 8V4a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v4"/><path d="M14 8V4a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v12a4 4 0 0 1-4 4H8"/><circle cx="10" cy="8" r="2"/></svg>
+        </div>
+        <h3>Leak Detection &amp; Repair</h3>
+        <p>Advanced detection technology to find hidden leaks in walls, slabs, and underground lines — then fix them right.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+        </div>
+        <h3>Drain Cleaning</h3>
+        <p>Stubborn clogs, slow drains, and mainline blockages cleared with professional-grade equipment — guaranteed.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Water Heater Service</h3>
+        <p>Installation, repair, and replacement of tank and tankless water heaters. Restore hot water fast.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Repiping &amp; Installation</h3>
+        <p>Whole-home repiping, new construction plumbing, and fixture installation by certified professionals.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+        </div>
+        <h3>Sewer Line Services</h3>
+        <p>Video inspection, trenchless repair, and sewer line replacement — minimizing disruption to your property.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="tel:+15043428000" class="btn btn-primary">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now — (504) 342-8000
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROOF ======================== -->
+<section class="proof" id="proof">
+  <div class="container">
+    <span class="section-label">Why Trust Woods Plumbing</span>
+    <h2 class="section-heading">Results That Speak for Themselves</h2>
+    <p class="section-subtext">Serving the Avondale and greater New Orleans area since 1986 with a perfect 5.0 Google rating. Here's what our customers have to say.</p>
+
+    <div class="proof-stats stagger">
+      <div class="stat-card fade-up">
+        <div class="stat-number">35+</div>
+        <div class="stat-label">Years in Business</div>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-number">5.0</div>
+        <div class="stat-label">Google Rating</div>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-number">5★</div>
+        <div class="stat-label">Star Reviews</div>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Availability</div>
+      </div>
+    </div>
+
+    <div class="testimonials-grid stagger">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>"Absolutely outstanding work! Owner and staff are extremely knowledgeable and kind. Highly recommend!!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SA</div>
+          <div>
+            <div class="testimonial-name">Storm A.</div>
+            <div class="testimonial-role">Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>"He cleaned out my tankless water heater the day that I called him. Very fast, friendly, and fairly priced. Will call again."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JL</div>
+          <div>
+            <div class="testimonial-name">John R. L.</div>
+            <div class="testimonial-role">Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>"Very professional!! Good person!!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">YD</div>
+          <div>
+            <div class="testimonial-name">Yaslyn D.</div>
+            <div class="testimonial-role">Google Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROCESS ======================== -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="process-header">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-heading">Three Steps to <em>Solved</em></h2>
+      <p class="section-subtext">We keep it simple. No runaround, no confusion — just a clear path from your first call to a job well done.</p>
+    </div>
+
+    <div class="process-steps stagger">
+      <div class="process-step fade-up">
+        <div class="step-number">1</div>
+        <h3>Call Us</h3>
+        <p>Reach us anytime. Describe what's happening and we'll schedule the soonest available appointment — often same-day.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-number">2</div>
+        <h3>We Diagnose</h3>
+        <p>A licensed technician arrives on time, inspects the issue, and gives you an honest, upfront quote before any work begins.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-number">3</div>
+        <h3>Problem Solved</h3>
+        <p>We complete the repair or installation to code, clean up the work area, and guarantee our work in writing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-visual-stat">35+</div>
+        <div class="about-visual-label">Years Serving the Avondale Area</div>
+        <div class="about-features">
+          <div class="about-feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Family Owned
+          </div>
+          <div class="about-feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Licensed &amp; Bonded
+          </div>
+          <div class="about-feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Fully Insured
+          </div>
+          <div class="about-feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Background Checked
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-label">About Woods Plumbing</span>
+        <h2>Built on Integrity, <em>Backed by Experience</em></h2>
+        <p>Woods Plumbing Services Inc. is a family-owned and operated business founded on a simple principle: do honest work at a fair price and treat every customer's home like it's your own.</p>
+        <p>Serving the Avondale and greater New Orleans area since 1986, we've been the trusted name in plumbing for homeowners and businesses across the region. Our team of licensed, certified technicians brings the expertise to solve any plumbing challenge — from routine maintenance to complex system overhauls.</p>
+
+        <div class="about-certs">
+          <span class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Licensed
+          </span>
+          <span class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Insured
+          </span>
+          <span class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Bonded
+          </span>
+          <span class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            BBB A+ Rated
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SERVICE AREA ======================== -->
+<section class="service-area">
+  <div class="container">
+    <div class="service-area-inner">
+      <div class="service-area-label">Proudly Serving</div>
+      <span class="area-tag">Avondale</span>
+      <span class="area-tag">Westwego</span>
+      <span class="area-tag">Marrero</span>
+      <span class="area-tag">Harvey</span>
+      <span class="area-tag">Gretna</span>
+      <span class="area-tag">Terrytown</span>
+      <span class="area-tag">Jefferson</span>
+      <span class="area-tag">Greater New Orleans</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FINAL CTA ======================== -->
+<section class="final-cta" id="contact">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2>Ready for Plumbing <em style="font-style:italic; color:var(--accent-gold-light);">That Just Works?</em></h2>
+      <p>Whether it's an emergency or a planned upgrade, we're here to help. One call is all it takes.</p>
+      <div class="final-cta-actions">
+        <a href="tel:+15043428000" class="final-cta-phone">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (504) 342-8000
+        </a>
+        <span class="or-divider">or</span>
+        <a href="tel:+15043428000" class="btn btn-primary" style="background:var(--accent-gold); box-shadow: 0 2px 12px rgba(212,130,64,0.4);">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          Woods Plumbing
+          <small>Services Inc.</small>
+        </div>
+        <p>Licensed plumbing professionals providing reliable repair, installation, and emergency services to the Avondale and greater New Orleans area since 1986.</p>
+        <a href="tel:+15043428000" class="btn btn-primary" style="font-size:14px; padding:10px 20px; min-height:40px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services">Emergency Repairs</a></li>
+          <li><a href="#services">Leak Detection</a></li>
+          <li><a href="#services">Drain Cleaning</a></li>
+          <li><a href="#services">Water Heaters</a></li>
+          <li><a href="#services">Repiping</a></li>
+          <li><a href="#services">Sewer Lines</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#proof">Reviews</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Contact</div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+15043428000" class="footer-phone-link">(504) 342-8000</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Avondale, LA 70094<br>United States</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Mon–Sat: 7AM – 7PM<br>Emergency: 24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Woods Plumbing Services Inc. All rights reserved.</span>
+      <span>License #10LGA-00085</span>
+      <span>Website by <a href="https://ringdigitalservices.com/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.8); text-decoration:underline; text-underline-offset:2px;">Ring Digital Services</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================== MOBILE STICKY CTA ======================== -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="tel:+15043428000" aria-label="Call Woods Plumbing">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Now — (504) 342-8000
+  </a>
+</div>
+
+<!-- ======================== SCRIPTS ======================== -->
+<script>
+// Header scroll effect
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// Mobile sticky CTA: show when hero is out of viewport
+const hero = document.getElementById('hero');
+const stickyCta = document.getElementById('stickyCta');
+const footer = document.querySelector('.site-footer');
+
+function updateStickyCta() {
+  const heroRect = hero.getBoundingClientRect();
+  const footerRect = footer.getBoundingClientRect();
+  const heroGone = heroRect.bottom < 0;
+  const footerVisible = footerRect.top < window.innerHeight;
+
+  if (heroGone && !footerVisible) {
+    stickyCta.classList.add('visible');
+  } else {
+    stickyCta.classList.remove('visible');
+  }
+}
+
+window.addEventListener('scroll', updateStickyCta, { passive: true });
+updateStickyCta();
+
+// Scroll reveal for .fade-up elements
+const fadeEls = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+fadeEls.forEach(el => observer.observe(el));
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
